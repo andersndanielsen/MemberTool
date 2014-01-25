@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/prefCat1">
+        <EditTextPreference
+            android:title="@string/prefET_priceRegularMember_title"
+            android:summary="@string/prefET_priceRegularMember_summary"
+            android:key="@string/prefET_priceRegularMember_key"
+            android:defaultValue="@string/prefET_priceRegularMember_default" />
+        <EditTextPreference
+            android:title="@string/prefET_priceNewMember_title"
+            android:summary="@string/prefET_priceNewMember_summary"
+            android:key="@string/prefET_priceNewMember_key"
+            android:defaultValue="@string/prefET_priceNewMember_default" />
+        <EditTextPreference
+            android:title="@string/prefET_priceFamilyMember_title"
+            android:summary="@string/prefET_priceFamilyMember_summary"
+            android:key="@string/prefET_priceFamilyMember_key"
+            android:defaultValue="@string/prefET_priceFamilyMember_default" />
+        <EditTextPreference
+            android:title="@string/prefET_acountNR_title"
+            android:summary="@string/prefET_acountNR_summary"
+            android:key="@string/prefET_acountNR_key"
+            android:defaultValue="@string/prefET_acountNR_default" />
+            
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/prefCat2">
+        <PreferenceScreen 
+            android:title="@string/prefScreen_membership_title"
+            android:summary="@string/prefScreen_membership_summary"
+            android:key="@string/prefScreen_membership_key">
+            <EditTextPreference 
+                android:title="@string/prefET_subject_membership_title"
+            	android:summary="@string/prefET_subject_membership_summary"
+            	android:key="@string/prefET_subject_membership_key"
+            	android:defaultValue="@string/prefET_subject_membership_default" />
+            <EditTextPreference 
+        	    android:title="@string/prefET_message_membership_title"
+        	    android:summary="@string/prefET_message_membership_summary"
+        	    android:key="@string/prefET_message_membership_key"
+        	    android:defaultValue="@string/prefET_message_membership_default"/>
+        </PreferenceScreen>
+        
+        <PreferenceScreen
+            android:title="@string/prefScreen_notPaid_title"
+            android:summary="@string/prefScreen_notPaid_summary"
+            android:key="@string/prefScreen_notPaid_key">
+        	<EditTextPreference
+            	android:title="@string/prefET_subject_notPaid_title"
+            	android:summary="@string/prefET_subject_notPaid_summary"
+            	android:key="@string/prefET_subject_notPaid_key"
+            	android:defaultValue="@string/prefET_subject_notPaid_default" />
+        	<EditTextPreference 
+        	    android:title="@string/prefET_message_notPaid_title"
+        	    android:summary="@string/prefET_message_notPaid_summary"
+        	    android:key="@string/prefET_message_notPaid_key"
+        	    android:defaultValue="@string/prefET_message_notPaid_default"/>
+         </PreferenceScreen>      
+     </PreferenceCategory>
+</PreferenceScreen>

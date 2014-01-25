@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item android:id="@+id/contextMenu_editMember"
+		android:title="@string/contextMenu_editMember" />
+	<item android:id="@+id/contextMenu_sendMail_empty"
+	    android:title="@string/contextMenu_sendMail_empty" />
+	<item android:id="@+id/contextMenu_sendMail_membership"
+	    android:title="@string/contextMenu_sendMail_membership" />
+	<item android:id="@+id/contextMenu_sendMail_membership_notPaid"
+	    android:title="@string/contextMenu_sendMail_notPaidMembership"/>
+</menu>

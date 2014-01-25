@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/listView_header"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:typeface="serif"
+        android:padding="5dip" />
+    <EditText
+        android:id="@+id/listView_search"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:hint="@string/hint_searchbox" />    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:background="?android:attr/dividerVertical"/>
+    
+    <LinearLayout
+        android:id="@+id/linear_all"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" >
+        
+    <Button 
+        android:id="@+id/btn_all_onoftwo"
+        android:layout_height="35dip"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:textSize="13sp"
+        android:text="@string/menu_sortThisOrLastYear"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="onBtnClick" />
+    <View
+        android:id="@+id/ViewColorPickerHelper"
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:background="?android:attr/dividerVertical"
+        android:layout_marginTop="4dip"
+        android:layout_marginBottom="4dip"/>
+    <Button
+        android:id="@+id/btn_all_this"
+        android:layout_height="35dip"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:textSize="13sp"
+        android:text="@string/menu_sortThisYear"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="onBtnClick"  />
+    <View
+        android:id="@+id/ViewColorPickerHelper2"
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:background="?android:attr/dividerVertical"
+        android:layout_marginTop="4dip"
+        android:layout_marginBottom="4dip"/>
+    <Button
+        android:id="@+id/btn_all_all"
+        android:layout_height="35dip"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:textSize="13sp"
+        android:text="@string/menu_sortAll"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="onBtnClick" />
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:background="?android:attr/dividerVertical"/>
+    
+    <!-- Main ListView
+         Always give id value as list(@android:id/list)
+    -->
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector"/>
+ 
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+    <!-- Input Firstname -->
+    <EditText 
+        android:id="@+id/inputFirstname"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="15dp"
+        android:singleLine="true"
+        android:inputType="textCapWords"
+        android:hint="@string/hint_firstname"/>
+    
+    <!-- Input Lastname -->
+    <EditText 
+        android:id="@+id/inputLastname"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="15dp"
+        android:singleLine="true"
+        android:inputType="textCapWords"
+        android:hint="@string/hint_lastname"/>
+    </LinearLayout>
+ 
+    <!-- Input Birth -->
+    <EditText 
+        android:id="@+id/inputBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="15dp"
+        android:singleLine="true"
+        android:inputType="text"
+        android:hint="@string/hint_birth"
+        android:onClick="showDatePickerFragment"/>
+        
+    <!-- Input Streetadr -->
+    <EditText 
+        android:id="@+id/inputStreetAdr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="15dp"
+        android:singleLine="true"
+        android:inputType="textCapWords"
+        android:hint="@string/hint_streetAdr"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+    
+    <!-- Input Postnr -->
+    <EditText 
+        android:id="@+id/inputPostNr"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="15dp"
+        android:singleLine="true"
+        android:inputType="number"
+        android:hint="@string/hint_postNr"/>
+    
+    <!-- Input City -->
+    <EditText 
+        android:id="@+id/inputCity"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="15dp"
+        android:singleLine="true"
+        android:inputType="textCapWords"
+        android:hint="@string/hint_city"/>
+    </LinearLayout>
+    
+    <!-- Input Email -->
+    <EditText 
+        android:id="@+id/inputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="15dp"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        android:hint="@string/hint_email"/>
+    
+ 	<!-- Input Tlf -->
+    <EditText 
+        android:id="@+id/inputTlf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="15dp"
+        android:singleLine="true"
+        android:inputType="number"
+        android:hint="@string/hint_tlf"/>
+    
+    <!--  Input Start_membership -->
+    <EditText
+        android:id="@+id/inputStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="15dp"
+        android:singleLine="true"
+        android:inputType="text"
+        android:hint="@string/hint_start"
+        android:onClick="showDatePickerFragment" />
+    <!-- Input Start_membership -->
+    
+    <!-- Input Info -->
+    <EditText 
+        android:id="@+id/inputInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="15dp"
+        android:singleLine="true"
+        android:inputType="textCapSentences"
+        android:hint="@string/hint_info"/>
+ 
+    <!-- Button Create Product -->
+    <Button android:id="@+id/btnAddMember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_add"
+        android:onClick="onBtnClick"/>
+ 
+</LinearLayout>
+</ScrollView>

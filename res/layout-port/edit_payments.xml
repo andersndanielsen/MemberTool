@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dip"
+    tools:context=".EditPayments" >
+	
+    <LinearLayout
+        android:id="@+id/linear3_editPay"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:gravity="center_horizontal" >
+	    
+	    <TextView
+	        android:id="@+id/tw_full_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	    	android:textColor="?android:textColorPrimary" />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/tw_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear3_editPay"
+        android:layout_centerHorizontal="true" />
+    
+    <TextView
+        android:id="@+id/tw_birth"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tw_start"/>
+    
+    <TextView 
+        android:id="@+id/tw_address"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tw_birth"/>
+    
+    <TextView 
+        android:id="@+id/tw_email"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tw_address"/>
+    
+    <TextView
+        android:id="@+id/tw_tlf"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tw_email" />
+    
+    <TextView 
+        android:id="@+id/tw_info"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tw_tlf"/>
+    
+    <TextView
+        android:id="@+id/tw_label_addPayment"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tw_info"
+        android:layout_centerInParent="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+    	android:textColor="?android:textColorPrimary"
+        android:text="@string/tw_addPayment" />
+    
+    <RelativeLayout
+        android:id="@+id/relative_editPay"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/tw_label_addPayment">
+    <LinearLayout 
+        android:id="@+id/linear2_editPay"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_centerHorizontal="true">
+    	<TextView
+        	android:id="@+id/tw_label_payForYear"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/tw_label_payForYear" />
+    	<EditText
+        	android:id="@+id/et_payForYear"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:gravity="center"
+        	android:inputType="number"
+        	android:hint="@string/hint_year"/>    	
+    </LinearLayout>
+    
+    <RadioGroup
+        android:id="@+id/radioGroup_membership"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:layout_below="@id/linear2_editPay"
+    	android:layout_centerInParent="true">
+    	<RadioButton 
+    	    android:id="@+id/rb_familyMember"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="@string/rb_label_familyMember"
+    	    android:checked="false"
+    	    android:clickable="true"
+    	    android:onClick="radioButtonListener"/>    	
+    	<RadioButton
+    	    android:id="@+id/rb_regularMember"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="@string/rb_label_regularMember"
+    	    android:checked="true"
+    	    android:clickable="true"
+    	    android:onClick="radioButtonListener"/>
+    	<RadioButton
+    	    android:id="@+id/rb_newMember"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="@string/rb_label_newMember"
+    	    android:checked="false"
+    	    android:clickable="true"
+    	    android:onClick="radioButtonListener"/>
+    	</RadioGroup>
+    </RelativeLayout>
+    
+    <Button 
+        android:id="@+id/btn_addPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_editPay"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btn_add"
+        android:onClick="onBtnClick"/>
+    
+    <TextView 
+        android:id="@+id/label_listView"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/btn_addPayment"
+        android:layout_marginTop="20dp"
+        android:text="@string/paymentListHeader"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+    	android:textColor="?android:textColorPrimary"/>
+	<ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_listView"
+        android:listSelector="@drawable/list_selector"
+        android:padding="0dip" />
+
+</RelativeLayout>

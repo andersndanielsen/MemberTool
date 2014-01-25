@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MemberTool</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_quit">Avslutt</string>
+    <string name="menu_mail">Mail</string>
+    <string name="menu_back">Tilbake</string>
+    <string name="menu_sortAll">Alle</string>
+    <string name="menu_sortThisYear">I år</string>
+    <string name="menu_sortThisOrLastYear">1 av 2</string>
+    <string name="submenu_emptyMail">Skriv ny mail</string>
+    <string name="submenu_notPaidMembership_all">Mail om ubetalt kontingent</string>
+    <string name="submenu_membership_all">Mail om kontingent</string>
+    
+    <string name="prefCat1">Betaling</string>
+    <string name="prefCat2">Maler</string>
+    <string name="prefScreen_notPaid_title">Ikke betalt medlemskontingent</string>
+    <string name="prefScreen_notPaid_summary">Purring etter ubetalt medlemskontingent</string>
+    <string name="prefScreen_notPaid_key">pref_notpaid</string>
+    <string name="prefScreen_membership_title">Betaling av medlemskontingent</string>
+    <string name="prefScreen_membership_summary">Første mail om å betale medlemskontingent</string>
+    <string name="prefScreen_membership_key">pref_membership_all</string>
+    <string name="prefET_subject_notPaid_title">Emne</string>
+    <string name="prefET_subject_notPaid_summary">Emne på mail</string>
+    <string name="prefET_subject_notPaid_default">Medlemskontingent, Ekeberg Sendeplateklubb</string>
+    <string name="prefET_subject_notPaid_key">subject_notPaid</string>
+    <string name="prefET_message_notPaid_title">Melding</string>
+    <string name="prefET_message_notPaid_summary">Melding som blir sendt</string>
+    <string name="prefET_message_notPaid_key">message_notPaid</string>
+    <string name="prefET_message_notPaid_default">Hei!\nJeg kan ikke se å ha mottat innbetaling av medlemskontingent fra deg. Håper du vil fortsette 
+        som medlem hos oss, og dermed betale denne så snart som mulig. Det kan gjøres ved og sette inn %1$skr for vanlige medlemmer, 
+        eller %2$skr for nær familie på minst 3stk, til kontonummer %3$s og merk betalingen med ditt navn. 
+        Det er også mulig å betale med bankkort her: http://www.ekebergsk.com/?page_id=1696
+        \n\nMvh
+        \nAnders N. Danielsen
+        \nInformasjons- og medlemsansvarlig
+        \nEkeberg Sendeplateklubb</string>
+    <string name="prefET_subject_membership_title">Emne</string>
+    <string name="prefET_subject_membership_summary">Emne på mail</string>
+    <string name="prefET_subject_membership_default">Medlemskontingent, Ekeberg Sendeplateklubb</string>
+    <string name="prefET_subject_membership_key">subject_membership_all</string>
+    <string name="prefET_message_membership_title">Melding</string>
+    <string name="prefET_message_membership_summary">Melding som blir sendt</string>
+    <string name="prefET_message_membership_key">message_membership_all</string>
+    <string name="prefET_message_membership_default">Hei!\nDet er nytt år, og sesongen nærmer seg fort! Jeg håper at du ønsker å fortsette som medlem
+        hos oss, og viser det ved å betale medlemskontingenten for dette året. Du er selvfølgelig viktig for oss! Uten medlemmer er det ingen klubb!\n\n
+        Sett inn %1$skr for vanlige medlemmer, eller %2$skr for nær familie på minst 3stk, til kontonummer %3$s og merk betalingen med ditt navn. 
+        Det er også mulig å betale med bankkort her: http://www.ekebergsk.com/?page_id=1696
+        \n\nMvh
+        \nAnders N. Danielsen
+        \nInformasjons- og medlemsansvarlig
+        \nEkeberg Sendeplateklubb</string>
+    <string name="prefET_priceRegularMember_title">Pris for vanlig medlem</string>
+    <string name="prefET_priceRegularMember_summary">Automatisk utfylling diverse steder</string>
+    <string name="prefET_priceRegularMember_key">pref_regularmember</string>
+    <string name="prefET_priceRegularMember_default">200</string>
+    <string name="prefET_priceNewMember_title">Pris for nytt medlem</string>
+    <string name="prefET_priceNewMember_summary">Automatisk utfylling diverse steder</string>
+    <string name="prefET_priceNewMember_key">pref_newmember</string>
+    <string name="prefET_priceNewMember_default">100</string>
+    <string name="prefET_priceFamilyMember_title">Pris for familiemedlemskap</string>
+    <string name="prefET_priceFamilyMember_summary">Automatisk utfylling diverse steder</string>
+    <string name="prefET_priceFamilyMember_key">pref_familymember</string>
+    <string name="prefET_priceFamilyMember_default">300</string>
+    <string name="prefET_acountNR_title">Kontonummer</string>
+    <string name="prefET_acountNR_summary">Automatisk utfylling diverse steder</string>
+    <string name="prefET_acountNR_key">pref_acountNr</string>
+    <string name="prefET_acountNR_default">1503 22 49393</string>
+    <string name="listEmpty">Ingen medlemmer er lagt til!</string>
+    
+    <string name="pDialogTitle">Betalingsinfo</string>
+    <string name="deleteDialogTitle">Slette medlem?</string>
+    <string name="deleteDialogText">Er du sikker på at du vil slette valgte medlem?</string>
+    <string name="deleteDialogPositiveButton">Ja</string>
+    <string name="deleteDialogNegativeButton">Nei</string>
+    <string name="regexFaultStart">Vennligst fyll inn</string>
+    <string name="regexFaultEnd">på rett måte</string>
+    <string name="listView_header">Antall:</string>
+    <string name="tw_firstname">Fornavn:</string>
+    <string name="tw_lastname">Etternavn:</string>
+    <string name="tw_start">Ble medlem:</string>
+    <string name="tw_birth">Fødselsdag:</string>
+    <string name="tw_streetAdr">Gateadresse:</string>
+    <string name="tw_address">Adresse:</string>
+    <string name="tw_postNr">Postnummer:</string>
+    <string name="tw_city">Sted:</string>
+    <string name="tw_email">Email:</string>
+    <string name="tw_tlf">Tlf:</string>
+    <string name="tw_info">Info:</string>
+    <string name="tw_addPayment">Legg til en betaling:</string>
+    <string name="tw_label_payForYear">For år:</string>
+    <string name="tw_label_payAmount">Beløp:</string>
+    <string name="rb_label_familyMember">Familierabatt</string>
+    <string name="rb_label_regularMember">Vanlig</string>
+    <string name="rb_label_newMember">Ny</string>
+    
+    <string name="toast_savedPayment">Betaling er registrert!</string>
+    <string name="toast_NotsavedPayment">Betaling ble ikke regisrert&#8230;</string>
+    <string name="toast_deletedPayment">Betaling er slettet!</string>
+    <string name="toast_NotDeletedPayment">Betaling ble ikke slettet&#8230;</string>
+    <string name="toast_deletedMember">Medlem ble slettet!</string>
+    <string name="toast_editedMember">Medlem ble endret!</string>
+    
+    <string name="btn_save">Lagre</string>
+    <string name="btn_delete">Slett</string>
+    <string name="btn_add">Legg til</string>
+    <string name="btn_addMember">Legg til medlem</string>
+    <string name="btn_viewAll">Se alle</string>
+    
+    <string name="pDialog_LoadingMembers">Laster inn medlemsdetaljer. Vennligst vent&#8230;</string>
+    <string name="pDialog_SavingMember">Lagrer medlem. Vennligst vent&#8230;</string>
+    <string name="pDialog_DeleteMember">Sletter medlem. Vennligst vent&#8230;</string>
+    <string name="pDialog_CreateMember">Legger til nytt medlem&#8230;</string>
+    <string name="pDialog_LoadingPayment">Laster inn betalingsdetaljer. Vennligst vent&#8230;</string>
+    <string name="pDialog_SavingPayment">Lagrer betaling. Vennligst vent&#8230;</string>
+    <string name="pDialog_DeletePayment">Sletter betaling. Vennligst vent&#8230;</string>
+    <string name="pDialog_CreatePayment">Legger til ny betaling&#8230;</string>
+    
+    <string name="hint_date">Registreringsdato</string>
+    <string name="hint_amount">Beløp</string>
+    <string name="hint_year">Gjeldende år</string>
+    <string name="hint_firstname">Fornavn</string>
+    <string name="hint_lastname">Etternavn</string>
+    <string name="hint_start">Ble medlem</string>
+    <string name="hint_birth">Fødselsdag</string>
+    <string name="hint_streetAdr">Gateadresse</string>
+    <string name="hint_postNr">Postnummer</string>
+    <string name="hint_city">Sted</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_tlf">Tlf</string>
+    <string name="hint_info">Info</string>
+    <string name="hint_searchbox">Søk etter medlem</string>
+    
+    <string name="paymentListHeader">Betalingshistorikk</string>
+    <string name="exception_activityNotFound">Det er ingen email-klienter installert</string>
+    
+    <string name="sendMail">Send mail&#8230;</string>
+    <string name="contextMenu_editMember">Rediger medlem</string>
+    <string name="contextMenu_sendMail_empty">Send mail - tom</string>
+    <string name="contextMenu_sendMail_membership">Send mail - kontingent</string>
+    <string name="contextMenu_sendMail_notPaidMembership">Send mail - manglende kontingent</string>
+    
+    <string name="tab_all">Alle</string>
+    <string name="tab_new">Ny</string>
+    
+    <string name="contentDes_pairOrNot">Viser grønn farge om medlem har betalt, og rød farge om ikke</string>
+    <string name="contentDes_mail">Bilde av en konvolutt</string>
+    
+    <string name="title_activity_edit_member">Rediger medlem</string>
+    <string name="title_activity_settings">Innstillinger</string>
+    <string name="title_activity_edit_payments">Rediger betalinger</string>
+
+</resources>

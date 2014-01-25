@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item
+        android:id="@+id/menu_mail"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/menu_mail"
+        android:icon="@drawable/content_new_email">
+    <menu>
+        <item 
+            android:id="@+id/submenu_emptyMail"
+            android:title="@string/submenu_emptyMail" />
+        <item 
+            android:id="@+id/submenu_membership_all"
+            android:title="@string/submenu_membership_all" />
+        <item
+            android:id="@+id/submenu_notPaidMembership_all"
+            android:title="@string/submenu_notPaidMembership_all" />
+    </menu>
+
+    </item>
+    <item
+        android:id="@+id/menu_settings"
+        android:orderInCategory="200"
+        android:showAsAction="always"
+        android:title="@string/menu_settings"
+        android:icon="@drawable/action_settings"/>        
+</menu>
